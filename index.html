@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Inter:wght@100;200;300;400;500&family=Righteous&display=swap"
+        rel="stylesheet">
+    
+    <title>Sunbeam Cars</title>
+
+</head>
+<body>
+
+    <!-- THE HEADER AND BANNER SECTION -->
+    <div class="topsection">
+
+        <header>
+            <div class="header">
+                <div class="logo"><a href="#">Sunbeam Cars</a></div>
+
+                <button class="login">Log in</button>
+            </div>
+        </header>
+    </div>
+
+    <!-- BOOKING FORM -->
+
+    <div class="banner-area">
+        <div class="booking-form-box">
+            <h1>Find the car that suits you</h1>
+
+            <form class="booking-form" action="/action_page.php" id="form">
+
+                <div class="input-grp">
+                    <label for="arrivalfield">Pick up:</label>
+                    <input type="date" class="form-control select-date" id="arrivalfield">
+                </div>
+
+                <div class="input-grp">
+                    <label for="returnfield">Return:</label>
+                    <input type="date" class="form-control select-date" id="departurefield">
+                </div>
+
+                <div class="input-grp">
+                    <label for="peoplefield">Number of persons</label>
+                    <input type="number" class="form-control" id="peoplefield" value="1" min="1" max="7">
+                </div>
+
+                <div class="input-grp">
+                    <label for="suitcasefield">Number of suitcases</label>
+                    <select class="custom-select" id="suitcasefield">
+                        <option value="0">0 - only a bag</option>
+                        <option value="1">1 suitcase</option>
+                        <option value="2">2 suitcases</option>
+                        <option value="3">3 suitcases</option>
+                        <option value="4">4 suitcases</option>
+                    </select>
+                </div>
+
+                <div class="search">
+                    <button type="submit" class="btn btn-primary trip" id="search">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section class="cards-wrap" id="output">
+        <p id="error"></p>
+
+
+
+        <!-- THE CARS -->
+        <!--<section class="cartypes">
+        <div class="car-1">
+            <img src="images/swift-fl-thumb.png" alt="Suzuki Swift" class="car-img">
+            <h2 class="type">Suzuki Swift</h2>
+            <p class="info">
+                Category: Budget<br>
+                People: 4<br>
+                Suitcases: 1<br>
+                Comfort level: low</p>
+            <h3 class="price">DKK850,00</h3>
+            <button class="book-btn">Book Now</button>
+        </div>
+
+        <div class="car-2">
+            <img src="images/mazda3.png" alt="Mazda 3" class="car-img">
+            <h2 class="type">Mazda 3</h2>
+            <p class="info">
+                Category: Standard<br>
+                People: 5<br>
+                Suitcases: 3<br>
+                Comfort level: medium</p>
+            <h3 class="price">DKK1170,00</h3>
+            <button class="book-btn">Book Now</button>
+        </div>
+
+        <div class="car-3">
+            <img src="images/citroen.png" alt="Citroen Grand C4 Picasso" class="car-img">
+            <h2 class="type">Citroen Grand C4 Picasso</h2>
+            <p class="info">
+                Category: Minivan<br>
+                People: 7<br>
+                Suitcases: 4<br>
+                Comfort level: high</p>
+            <h3 class="price">DKK1420,00</h3>
+            <button class="book-btn">Book Now</button>
+        </div> -->
+
+
+    </section> 
+
+        <!-- THE FOOTER "NAV" SECTION -->
+        <section>
+            <div class="footer">
+
+                <div class="footer-section">
+
+                    <div class="footer-section-1">
+                        <h3>Our company</h3>
+                        <ul>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Jobs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section-2">
+                        <h3>Rent a car</h3>
+                        <ul>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Rent out your car</a></li>
+                            <li><a href="#">Rent a car</a</li> <li><a href="#">Insurance</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section-3">
+                        <h3>Leasing</h3>
+                        <ul>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Rent out your car</a></li>
+                            <li><a href="#">Private leasing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section-4">
+                        <h3>Leasing-offers</h3>
+                        <ul>
+                            <li><a href="#">Tesla offers</a></li>
+                            <li><a href="#">Renault offers</a></li>
+                            <li><a href="#">Mazda offers</a></li>
+                            <li><a href="#">Ford offers</a></li>
+                            <li><a href="#">Opel offers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bottom-footer">
+            <h4>Privacy|Policy</h4>
+            <h5>© 2005-2022 Mozilla and individual contributors. Content is available under these licenses.</h5>
+        </footer>
+
+<script src="data.js"></script>
+<script src="javascript.js"></script>
+
+</body>
+
+</html>
